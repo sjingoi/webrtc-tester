@@ -4,23 +4,34 @@
     </head>
     <body>
         <h1>WebRTC Test</h1>
-        <p>This is the _____ connection</p>
-        <select id="connection-type">
-            <option value="local">local</option>
-            <option value="remote">remote</option>
-        </select>
-        <button id="submit-type">Submit</button>
+        
+        <p>Connection Type</p>
+        <div>
+            <p>This is the _____ connection</p>
+            <select id="connection-type">
+                <option value="local">local</option>
+                <option value="remote">remote</option>
+            </select>
+            <button id="submit-type">Submit</button>
+        </div>
         <p>Local Offer</p>
-        <textarea id="local-offer"></textarea>
-        <button id="submit-local" disabled="true">Submit</button>
+        <div>
+            <textarea id="local-offer"></textarea>
+            <button id="submit-local" disabled="true">Submit</button>
+        </div>
+
         <p>Remote Offer</p>
-        <textarea id="remote-offer"></textarea>
-        <button id="submit-remote" disabled="true">Submit</button>
-        <p>ChatBox</p>
-        <textarea id="chat-box-recieve"></textarea>
-        <textarea id="chat-box-send"></textarea>
-        <button id="submit-text">Submit</button>
-        <script src="index.js"></script>
-    </body>
-    
+        <div>
+            <textarea id="remote-offer"></textarea>
+            <button id="submit-remote" disabled="true">Submit</button>    
+        </div>
+        
+        <p>ChatArea</p>
+        <div>
+            <textarea id="chat-box-recieve" disabled="true"></textarea>
+            <textarea id="chat-box-send"></textarea>
+            <button id="submit-text">Submit</button>
+            <script src="index.js"></script>
+        </div>
+    </body> 
 </html>

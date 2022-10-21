@@ -17,6 +17,9 @@ sendBox = document.getElementById("chat-box-send");
 recieveBox = document.getElementById("chat-box-recieve");
 
 function submitType() {
+    /**
+     * Usually executed when the type selector button is pressed.
+     */
     submitTypeBtn.disabled = true;
     typeSelection.disabled = true;
     if (typeSelection.value == "local") {
