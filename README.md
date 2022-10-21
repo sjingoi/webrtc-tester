@@ -1,2 +1,2 @@
-# webrtc-test
- testing webrtc
+# webrtc-tester
+ Basic WebRTC App with manual signaling
