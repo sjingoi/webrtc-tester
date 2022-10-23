@@ -17,6 +17,14 @@ sendBox = document.getElementById("chat-box-send")
 recieveBox = document.getElementById("chat-box-recieve")
 connectionMsg = document.getElementById("connection-open-msg")
 
+const SERVERS = {
+    iceServers:[
+        {
+            urls:["stun:stun1.l.google.com:19302", "stun:stun1.l.google.com:19302", "stun:stun2.l.google.com:19302"]
+        }
+    ]
+}
+
 function submitType() {
     /**
      * Usually executed when the type selector button is pressed.
@@ -34,7 +42,7 @@ function submitType() {
 }
 
 function createLocalConnection() {
-    const lc = new RTCPeerConnection();
+    const lc = new RTCPeerConnection(SERVERS);
     const dc = lc.createDataChannel("channel")
 
     localOfferBox.disabled = false
@@ -62,7 +70,7 @@ function createRemoteConnection() {
     localOfferBox.disabled = false
 
     const offer = JSON.parse(remoteOfferBox.value)
-    const rc = new RTCPeerConnection
+    const rc = new RTCPeerConnection(SERVERS)
     rc.onicecandidate = e => {
         console.log("Created new ICE candidate.")
         localOfferBox.textContent = JSON.stringify(rc.localDescription)
