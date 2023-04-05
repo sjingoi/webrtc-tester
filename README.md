@@ -8,6 +8,7 @@ How To:
 1. Open page on 2 browsers
 
 2. Select one to be local and one to be remote. Click submit.
+
 ![image](https://user-images.githubusercontent.com/13107228/230190395-573c3fb0-01dc-4a58-be11-d2a1d177d04c.png)
 ![image](https://user-images.githubusercontent.com/13107228/230190439-b7c5c90f-8054-42fb-a134-cb38fcb9aea4.png)
 
